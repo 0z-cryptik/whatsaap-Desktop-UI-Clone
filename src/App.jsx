@@ -1,14 +1,15 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import React from "react";
+import "./App.scss";
+import { ChatSection } from "./components/chatsSection";
+import { Conversation } from "./components/conversationPage";
 
-function App() {
-  
-
+const App = () => {
   return (
-    <>Hello world</>
-  )
-}
+    <main className="flex flex-row bg-[#282929]">
+      <ChatSection />
+      <Conversation />
+    </main>
+  );
+};
 
-export default App
+export default App;

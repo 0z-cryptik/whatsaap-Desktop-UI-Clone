@@ -1,0 +1,91 @@
+$greenChat: #075e54;
+$blackChat: #202020;
+$borderDetails: 15px solid transparent;
+
+#bg {
+  background: url("./images/Whatsappbg.png");
+  background-attachment: fixed;
+}
+
+#RChat, #lastChat {
+  width: fit-content;
+  height: fit-content;
+  border-style: solid;
+  position: relative;
+  border-radius: 7px 0 7px 7px;
+}
+
+#RChat::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 93%;
+  border-top: 20px solid $greenChat;
+  width: 0;
+  height: 0;
+  border-left: 20px solid transparent;
+  border-right: 25px solid transparent;
+}
+
+#LChat {
+  width: fit-content;
+  height: fit-content;
+  border-style: solid;
+  position: relative;
+  border-radius: 7px 7px 7px 7px;
+}
+
+#LChat::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 80%;
+  border-top: 15px solid $blackChat;
+  width: 0;
+  height: 0;
+  border-left: $borderDetails;
+  border-right: $borderDetails;
+}
+
+#imgChat {
+  border-style: solid;
+  position: relative;
+  border-radius: 0px 7px 7px 7px;
+}
+
+#imgChat::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 95%;
+  border-top: 15px solid $blackChat;
+  width: 0;
+  height: 0;
+  border-left: $borderDetails;
+  border-right: $borderDetails;
+}
+
+#lastChat::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 93%;
+  border-top: 20px solid $greenChat;
+  width: 0;
+  height: 0;
+  border-left: $borderDetails;
+  border-right: $borderDetails;
+}
+
+#chatSection::-webkit-scrollbar {
+  display: none;
+}
+
+#chatSection {
+  -ms-overflow-style: none; 
+  scrollbar-width: none; 
+}
+
+img {
+  image-rendering: optimizeQuality;
+}
