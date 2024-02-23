@@ -4,7 +4,7 @@ import { GrEmoji } from "react-icons/gr";
 
 export const Footer = () => {
   return (
-    <div className="bg-[#292A2A] flex flex-row py-2 fixed top-[94%] w-[60%]">
+    <div className="bg-[#292A2A] flex flex-row py-2 fixed bottom-[0%] w-[60%]">
       <button>
         <GrEmoji
           size={"1.3rem"}

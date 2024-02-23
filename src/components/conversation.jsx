@@ -21,7 +21,8 @@ export const FileSent = () => {
     <div className="bg-[#075e54] w-fit ml-auto h-fit mt-3 mr-[22px] px-3 pt-3 rounded-lg shadow-lg">
       <section className="bg-[#128c7e] w-full h-fit rounded-lg">
         <div className="flex flex-row py-1 border-b pl-2 pr-[50px]">
-          <img src={Zip}
+          <img
+            src={Zip}
             width={`35px`}
             className="-mt-2 mr-2"
           />

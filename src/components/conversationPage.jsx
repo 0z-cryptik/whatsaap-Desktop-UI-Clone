@@ -8,7 +8,7 @@ export const Conversation = () => {
       <ConversationHeader />
       <section
         id="bg"
-        className="bg-[#202020] text-white mt-[15vh] pt-[12px] pb-[50px]">
+        className="text-white mt-[15vh] pt-[12px] pb-[50px]">
         <FirstChat />
 
         <FileSent />
